@@ -2737,21 +2737,41 @@ thread2 = threading.Thread(target=nameUpdate)
 thread2.daemon = True
 thread2.start()
 
-def autolike():
+#--------------------
+def likePost():
     for zx in range(0,20):
         hasil = cl.activity(limit=20)
-    if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
-        try: 
-            cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By : IP\n\nhttp://line.me/ti/p/zuFNPuXyEb")
-            ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By: IP\n\nhhttp://line.me/ti/p/zuFNPuXyEb")
-            print "Like"
-        except:
-            pass
-    else:
-        print "Already Liked"
-        time.sleep(500)
+        if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
+            if hasil['result']['posts'][zx]['userInfo']['mid'] in owner:
+                try:
+                    cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+                    ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki2.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki3.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki4.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki5.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1") 
+                    ki6.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+                    ki7.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+                    ki8.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+                    ki9.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+                    ki10.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki2.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki3.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki4.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki5.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki6.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki7.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki8.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki9.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    ki10.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1")
+                    print "Like"
+                except:
+                    pass
+            else:
+                print "Status Sudah di Like Plak"
+
 while True:
     try:
         Ops = cl.fetchOps(cl.Poll.rev, 5)
