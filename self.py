@@ -53,8 +53,7 @@ print "Iphenk login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" **IP chatBot Help Menu**
-↠Public Command↞
+helpMessage =""" By.TON V.test
 √ [Bot]- -Show Contact All Bot                    
 √ [Group id]- -Show Group ID        
 √ [Ginfo]- -Show Group Info            
@@ -79,8 +78,9 @@ helpMessage =""" **IP chatBot Help Menu**
 √ [Nk @]    Kick Target User
 √ [All]  Invite Semua Bot
 √ [Mayhem] Do not use in d'group
-「 Edited By 」
-http://line.me/ti/p/zuFNPuXyEb
+       👉⭐⭐TON⭐⭐👈
+
+http://line.me/ti/p/K_CcmJ9rX1
 """
 
 Setgroup =""" **Bot Protection Key**
