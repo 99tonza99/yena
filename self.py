@@ -1241,7 +1241,24 @@ def bot(op):
                       cl.sendText(msg.to,"Succes Blacklist")
                    except:
                       pass
-        #-------------Fungsi Ban By Tag Finish---------------------#         
+            #--------------------------------- YOUTUBE ----------------------------------
+            elif "youtube " in msg.text:
+                query = msg.text.replace("youtube ","")
+                with requests.session() as s:
+                    s.headers['user-agent'] = 'Mozilla/5.0'
+                    url = 'http://www.youtube.com/results'
+                    params = {'search_query': query}
+                    r = s.get(url, params=params)
+                    soup = BeautifulSoup(r.content, 'html5lib')
+                    hasil = ""
+                    for a in soup.select('.yt-lockup-title > a[title]'):
+                        if '&list=' not in a['href']:
+                            hasil += ''.join((a['title'],'\nhttp://www.youtube.com' + a['href'],'\n\n'))
+                    cl.sendText(msg.to,hasil)
+                    print '[Command] Youtube Search'
+#----------------------------------------------------------------------------
+ 
+	#-------------Fungsi Ban By Tag Finish---------------------#         
             elif msg.text in ["cancel","Cancel"]:
             	if msg.from_ in Bots or staff:
                     if msg.toType == 2:
