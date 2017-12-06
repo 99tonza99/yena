@@ -104,17 +104,17 @@ Hmid = ki8.getProfile().mid
 Imid = ki9.getProfile().mid
 Jmid = ki10.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,"u9e5a757e7b6e466baf87e8f747d96eb5","ud4f80e5acbc5b7d325284692a9900941"]
-admin = ["u9e5a757e7b6e466baf87e8f747d96eb5","ud4f80e5acbc5b7d325284692a9900941"]
-staff = ["u9e5a757e7b6e466baf87e8f747d96eb5"]
-adminMID = "u9e5a757e7b6e466baf87e8f747d96eb5","ud4f80e5acbc5b7d325284692a9900941"
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,"u0085b75fb3d15b36647a8a01101fe847"]
+admin = ["u0085b75fb3d15b36647a8a01101fe847"]
+staff = ["u0085b75fb3d15b36647a8a01101fe847"]
+adminMID = "u0085b75fb3d15b36647a8a01101fe847"
 wait = {
     'contact':True,
     'autoJoin':True,
     'autoCancel':{"on":True,"members":1},
     'leaveRoom':True,
     'timeline':True,
-    'autoAdd':True,
+    'autoAdd':False,
     'message':"Thanks for add me",
     "lang":"JP",
     "comment":"Thanks for add me",
@@ -136,11 +136,11 @@ wait = {
     "cName11":"ディータ10人 ",
     "blacklist":{},
     "wblacklist":False,
-    "dblacklist":True,
+    "dblacklist":False,
     "ProtectQR":False,
     "Protectguest":False,
     "Protectcancel":False,
-    "protectionOn":True,
+    "protectionOn":False,
     "atjointicket":True,
     "MProtection":False,
     "AllProtection":False
@@ -1022,7 +1022,7 @@ def bot(op):
                     cl.sendText(msg.to,msg.text)
             elif msg.text is None:
                 return
-            elif msg.text in ["Key","help","Help"]:
+            elif msg.text in ["Key","help","help1"]:
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,helpMessage)
                 else:
@@ -1201,7 +1201,7 @@ def bot(op):
             elif msg.text in ["Creator"]:
                 if msg.toType == 2:
                     msg.contentType = 13
-                    Creatorbot = "u9e5a757e7b6e466baf87e8f747d96eb5"
+                    Creatorbot = "u0085b75fb3d15b36647a8a01101fe847"
                     try:
                         msg.contentMetadata = {'mid': Creatorbot}
                         
@@ -2098,7 +2098,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         cl.updateGroup(G)
                         
-            elif msg.text in ["All","masuk"]:
+            elif msg.text in ["All","kicker"]:
                 if msg.from_ in  Bots or staff:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
@@ -2218,7 +2218,7 @@ def bot(op):
                                 pass
       
 #---------------kickall started----------------#                   
-            elif "Mayhem" in msg.text:
+            elif "MK" in msg.text:
               if msg.from_ in Bots or staff:
                 if msg.toType == 2:
                     print "ok"
