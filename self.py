@@ -2431,16 +2431,17 @@ def bot(op):
             
 #-----------------------------------------------
             elif msg.text in ["Respon","respon"]:
-                ki.sendText(msg.to,"（`・ω・`）")
-                ki2.sendText(msg.to,"（`・ω・｀）")
-                ki3.sendText(msg.to,"（`・ω・｀）")
-                ki4.sendText(msg.to,"（`・ω・｀）")
-                ki5.sendText(msg.to,"（`・ω・｀）")
-                ki6.sendText(msg.to,"（`・ω・｀）")
-                ki7.sendText(msg.to,"（`・ω・｀）")
-                ki8.sendText(msg.to,"（`・ω・｀）")
-                ki9.sendText(msg.to,"（`・ω・｀）")
-                ki10.sendText(msg.to,"（`・ω・｀）")
+                ki.sendText(msg.to,"ต้น1 มาครับ")
+                ki2.sendText(msg.to,"ต้น2 มาครับ")
+                ki3.sendText(msg.to,"ต้น3 มาครับ")
+                ki4.sendText(msg.to,"ต้น4 มาครับ")
+                ki5.sendText(msg.to,"ต้น5 มาครับ")
+                ki6.sendText(msg.to,"ต้น6 มาครับ")
+                ki7.sendText(msg.to,"ต้น7 มาครับ")
+                ki8.sendText(msg.to,"ต้น8 มาครับ")
+                ki9.sendText(msg.to,"ต้น9 มาครับ")
+                ki10.sendText(msg.to,"ต้น10 มาครับ")
+	
 #-----------------------------------------------
             
             elif "Spam " in msg.text:
@@ -2468,7 +2469,16 @@ def bot(op):
                     cl.sendText(msg.to, "Waiting...")
                     elapsed_time = time.time() - start
                     cl.sendText(msg.to, "%sseconds" % (elapsed_time))
-                    
+                    ki.sendText(msg.to, "%sseconds" % (elapsed_time)              ki2.sendText(msg.to, "%sseconds" % (elapsed_time))
+                    ki3.sendText(msg.to, "%sseconds" % (elapsed_time))
+                    ki4.sendText(msg.to, "%sseconds" % (elapsed_time))
+                    ki5.sendText(msg.to, "%sseconds" % (elapsed_time))
+                    ki6.sendText(msg.to, "%sseconds" % (elapsed_time))
+                    ki7.sendText(msg.to, "%sseconds" % (elapsed_time))
+                    ki8.sendText(msg.to, "%sseconds" % (elapsed_time))
+                    ki9.sendText(msg.to, "%sseconds" % (elapsed_time))
+                    ki10.sendText(msg.to, "%sseconds" % (elapsed_time))
+
             elif "Add staff @" in msg.text:
                 if msg.from_ in Bots:
                     print "[Command]Staff add executing"
