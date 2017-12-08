@@ -2469,7 +2469,7 @@ def bot(op):
                     cl.sendText(msg.to, "Waiting...")
                     elapsed_time = time.time() - start
                     cl.sendText(msg.to, "%sseconds" % (elapsed_time))
-                    ki.sendText(msg.to, "%sseconds" % (elapsed_time)              ki2.sendText(msg.to, "%sseconds" % (elapsed_time))
+                    ki.sendText(msg.to, "%sseconds" % (elapsed_time))              ki2.sendText(msg.to, "%sseconds" % (elapsed_time))
                     ki3.sendText(msg.to, "%sseconds" % (elapsed_time))
                     ki4.sendText(msg.to, "%sseconds" % (elapsed_time))
                     ki5.sendText(msg.to, "%sseconds" % (elapsed_time))
