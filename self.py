@@ -2463,13 +2463,13 @@ def bot(op):
                     else:
                         cl.sendText(msg.to, "Kelebihan batas :v")
                         
-            elif msg.text in ["Speed","Speedbot","speedbot"]:
+            elif msg.text in ["Speed","Sp","speedbot"]:
             	if msg.from_ in Bots or staff:
                     start = time.time()
                     cl.sendText(msg.to, "Waiting...")
                     elapsed_time = time.time() - start
                     cl.sendText(msg.to, "%sseconds" % (elapsed_time))
-                    ki.sendText(msg.to, "%sseconds" % (elapsed_time))              ki2.sendText(msg.to, "%sseconds" % (elapsed_time))
+                    ki.sendText(msg.to, "%sseconds" % (elapsed_time))
                     ki3.sendText(msg.to, "%sseconds" % (elapsed_time))
                     ki4.sendText(msg.to, "%sseconds" % (elapsed_time))
                     ki5.sendText(msg.to, "%sseconds" % (elapsed_time))
