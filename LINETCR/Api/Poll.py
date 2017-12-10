@@ -17,9 +17,10 @@ class Poll:
   polling_path = "/P4";
   host = "gd2.line.naver.jp";
   port = 443;
-
-  UA = "Line/7.14.0"
-  LA = "IOSIPAD\t7.14.0\tiPhone OS\t10.12.0"
+  
+  UA = "Line/7.14.0 IOS\t7.14.0\tiPhone OS\t10.12.0"
+  US = "Line/7.14.0 IOS\t7.14.0\tiPhone OS\t10.12.0"
+  
 
   rev = 0
 
